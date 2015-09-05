@@ -1,0 +1,8 @@
+AddDefaultCharset Off
+<IfModule dir_module>
+    DirectoryIndex index.php
+</IfModule>
+
+RemoveHandler .html .htm
+AddType text/html .htm .html
+AddType application/x-httpd-php .php .htm .html

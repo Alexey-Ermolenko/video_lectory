@@ -1,0 +1,99 @@
+<?php
+session_start();
+$numberLection=$_GET['idLection'];
+$numberScenario=$_GET['idScenario'];
+$_SESSION['$numberLection']=$numberLection;
+$_SESSION['$numberScenario']=$numberScenario;
+include "homepage.php"; 
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript" src="js/obj2web.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<title>ML studio: Запись лекции</title>
+</head>
+
+<body>
+	<header>
+		<div id='opheader'>
+			<center><h1>ML studio</h1></center>
+		</div>
+		<nav id='firsrNav'>
+			<a class="firstNavLink" href='<?php echo $home."welcome.html";?>'>О проекте</a>
+			<a id="thisLink" href='<?php echo $home."lesson/listLecture.html";?>'>Лекции</a>
+		</nav>
+		<nav id='secondNav'>
+			<a class="secondNavLink" href='<?php echo $home."lesson/listLecture.html";?>'>Лекции</a>
+			<a class="secondNavLink" href='<?php echo $home."slides/listSlides.html";?>'>Слайды</a>
+			<a class="secondNavLink" href='<?php echo $home."scenario/listScenarios.html";?>'>Сценарии</a>
+			<a id="thisLink2" href='<?php echo $home."res/listLectureForRes.html";?>'>Запись лекции</a>
+			<a class="secondNavLink" href='<?php echo $home."addVideo/listLectureForVideo.html";?>'>Добавление видео</a>
+			<a class="secondNavLink" href='<?php echo $home."timeCorrection/listLectureForCorrection.html";?>'>Синхронизация лекции</a>
+		</nav>
+	</header>
+	<article>
+		<div id="site">
+			<div id='form1'>
+				<output id='timer'>0:00</output>
+				<form id="forma" action='action.php' method='post' target='iframe-name'>
+					<input type="submit" id="finish" name="finish" value="Стоп" onclick='finish_timer()' />
+				</form>
+				<button id="start" onclick='start_timer()'>Старт</button>
+			</div>
+			<div id='subs'>
+				<h2 id='text'></h2>
+			</div>
+		</div>
+		<!--<div id='buttonbar2'>
+			<button id="redmarker">r</button>
+			<button id="blackmarker">b</button>
+			<button id="whitemarker">w</button>
+			<button id="clear">&#10007</button>
+			<button id="loop">L</button>
+		</div>
+		<div id="slide">
+		</div>-->
+		<div id="list">
+			<div id="inlist">
+				<?php 
+					unset($_SESSION['idSlide']);
+					unset($_SESSION['timeSlide']);
+					unset($_SESSION['action']);
+					unset($_SESSION['height']);
+					unset($_SESSION['width']);
+					unset($_SESSION['xold']);
+					unset($_SESSION['yold']);
+					unset($_SESSION['x']);
+					unset($_SESSION['y']);
+					unset($_SESSION['color']);
+					unset($_SESSION['timeAction']);
+				?>
+				<div id="pictures"> <?php include "loading.php"; ?> </div> 
+			</div>
+		</div>
+		<!--<canvas id='canvasLoop'></canvas>
+		<canvas id='canvasPreload'></canvas>-->
+		<iframe id='result' name="iframe-name" frameborder='no' src="#"></iframe>
+	</article>
+	<script type="text/javascript">
+		var countSlide=<?php echo $countSlide; ?>;
+		var jsonID = '<?php echo json_encode($masID);?>';
+		var jsonType = '<?php echo json_encode($masType);?>';
+		var jsonSlide2D = '<?php echo json_encode($masSlide2D);?>';
+		var jsonTexture3D = '<?php echo json_encode($masTexture3D);?>';
+		var jsonObject3D = '<?php echo json_encode($masObject3D);?>';
+		var jsonComment = '<?php echo json_encode($masComment);?>';
+		var url = '<?php echo $home."repository/" ?>';
+		var url2 = '<?php echo $home."files/" ?>';
+		var url3 = '<?php echo $home."res/resWithoutVideoTwoDisplay/slide.html?idLection=".$numberLection."&idScenario=".$numberScenario;?>';
+		var sitepath ='<?php echo $home;?>';
+	</script>
+	<!--<script type="text/javascript" src="js/blackborder.js"></script>
+	<script type="text/javascript" src="js/loop.js"></script>-->
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

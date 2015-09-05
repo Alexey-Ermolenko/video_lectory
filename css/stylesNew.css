@@ -1,0 +1,146 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	border:0px solid #000;
+	min-height: 100%;
+	background-color: #fafafa;
+}
+
+header
+{
+	background-color:#1E71B8;
+	position: relative;
+}
+
+#logo
+{
+	max-height:100px;
+	margin-left: 100px;
+}
+
+nav
+{
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color:#1E71B8;
+}
+
+article
+{
+	/*position:absolute;
+	top:105px;
+	bottom:40px;*/
+	position: relative;
+	width: 100%;
+	overflow-x: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-sizing: border-box;
+}
+
+ul
+{
+	list-style:none;
+	padding:0px;
+	margin: 0px;
+	height: 40px;
+}
+
+.menu
+{ 
+	float:left;
+	height: 40px;
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+    text-align: center;
+	padding: 10px;
+	height: 20px;
+}
+
+.menu a:hover
+{
+	cursor: pointer;
+	color: gold;	
+}
+
+footer
+{
+	/*position: fixed;*/
+	position: relative;
+	background-color:#1E71B8;
+	text-align:center;
+	color: white;
+	height: 40px;
+	width: 100%;
+	/*bottom: 0px;*/
+}
+
+footer p
+{
+	position: relative;
+	top: 10px;
+}
+
+article h2
+{
+	text-indent: 1em;
+}
+
+article p
+{
+	text-indent: 1.4em;
+}
+
+#table
+{
+	height:220px;
+}
+
+.span4
+{
+	position: relative;
+	width:267px;
+	float:left;
+	margin: 1em;
+	height:100%;
+}
+
+.span4:hover .download
+{
+	display: block;
+}
+
+.download
+{
+	display:none;
+	position: absolute;
+	height:40px;
+	width:40px;
+	right:10px;
+	top:10px;
+}
+
+.download img
+{
+	height:100%;
+	width:100%;
+}
+
+.links
+{
+	display: block;
+	height:100%;
+	width:100%;
+	text-decoration: none;
+	color: #3F48CC;
+}

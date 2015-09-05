@@ -1,0 +1,366 @@
+/*body 
+{
+    position: absolute;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    float: none;
+}*/
+
+.firstNavLink
+{
+	border: 1px solid #000; /* Рамка */
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px; /* Поля */
+	background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+	text-decoration: none; /* Убираем подчёркивание */
+	color: #a00;
+}
+
+.secondNavLink
+{
+	border: 1px solid #000; /* Рамка */
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px; /* Поля */
+	background: linear-gradient(to top, #fff, #eee); /* Градиент */
+	text-decoration: none; /* Убираем подчёркивание */
+	color: #ff8000; /* Цвет текста */
+}
+
+#thisLink
+{
+	border: 1px solid #000; /* Рамка */
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px; /* Поля */
+	text-decoration: none; /* Убираем подчёркивание */
+	background: linear-gradient(to bottom, #fff, #ddd); /* Градиент */
+	color: #008040; /* Цвет текста */
+	
+}
+
+#thisLink2
+{
+	border: 1px solid #000; /* Рамка */
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px; /* Поля */
+	text-decoration: none; /* Убираем подчёркивание */
+	background: linear-gradient(to top, #f1f1f1, #e5e5df); /* Градиент */
+	color: #d9be00;
+}
+
+.firstNavLink:hover 
+{
+	background: linear-gradient(to bottom, #fcfff4, #e9e9ce); /* Градиент */
+	color: #a00;
+}
+   
+.secondNavLink:hover 
+{
+	background: linear-gradient(to top, #f1f1f1, #e5e5df); /* Градиент */
+	color: #d9be00;
+}
+.links
+{
+	text-decoration: none; /* Убираем подчёркивание */
+	color: #000; /* Цвет текста */
+	/*border-bottom: 1px double #ccc;*/
+	display: inline-block;
+}
+
+#site
+{
+    position: relative;
+    /*top:10%;*/
+	float: left;
+    /*left:5%;*/
+    width:52%;
+}
+
+#videoblock
+{
+    position:relative;
+    width:100%;
+    background-color:Black;
+}
+
+#playlink
+{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width:10%;
+    height:10%;
+    display: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#videoblock video
+{
+    position:relative;
+    width:100%;
+}
+
+#buttonbar
+{
+    position:relative;
+    bottom: 0px;
+    height: 30px;
+    width:100%;
+    border-color: rgb(0,0,0);
+    border-width: 10px;
+    background-color:rgb(255,255,255);
+	
+}
+#button_bar {
+	float:right;
+	position: relative;
+	top: 10px;
+	width:43%;
+	height: 70px;
+	border: 1px solid #000;	
+}
+#res
+{
+    float: left;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+#play
+{
+    float: left;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+#videoRange
+{
+    float: left;
+    height:30px;
+    width:45%;
+    cursor: pointer;
+}
+
+#time
+{
+    float: left;
+    padding-top:5px;
+    padding-left: 5px;
+    height:40px;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#fullTime
+{
+    float: left;
+    padding-top:5px;
+    padding-left: 5px;
+    height:40px;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#audioFull
+{
+    float: right;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+#audioRange
+{
+    float: right;
+    height:30px;
+    width:10%;
+    cursor: pointer;
+}
+
+#videoFull
+{
+    float: right;
+    width:30px;
+    height:30px;
+}
+
+#buttonbar2
+{
+    position: relative;
+    float:left;
+    top:25%;
+	left: 2%;
+	right: 1%;
+    width:2%;
+	height:100px;
+}
+
+#buttonbar2 button
+{
+	position: relative;
+	float: top;
+	left: 10%;
+	height: 30px;
+	width: 100%;
+}
+
+#slide
+{
+    position: relative;
+    float:right;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    width:43%;
+}
+#command_button_bar {
+	position: relative;
+    float:right;
+    width:43%;
+	box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+#blackboard 
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#list
+{
+    position: relative;
+    top:200px;
+    height:140px;
+    /*left:5%;*/
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+	clear: left;
+}
+
+
+#inlist
+{
+   height:120px; 
+}
+
+#pictures
+{
+    width:100%;
+    height:110px;
+}
+
+#pictures img
+{
+    position:relative;
+    display:inline-block;
+    height:100px;
+    width:133px;
+    float:left;
+    left:0px;
+    top:0px; 
+    cursor: pointer;
+	border: none;
+}
+
+#timelist
+{
+    width:100%;
+    height:20px;
+}
+
+#timelist p
+{
+   position:relative;
+   bottom:20px;
+   height:20px; 
+   width: 100px;
+   float:left;
+   text-align:center;
+   cursor: default;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#menu
+{
+  float:right;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#submenu
+{
+    position: absolute;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    background-color:Gray;
+}
+
+#submenu li
+{
+    list-style-type: none;
+    height: 20px;
+}
+
+#videoClass
+{
+  width: 30px;
+  height: 30px;  
+}
+
+#canvasLoop
+{
+	display: none;
+}
+
+#canvasPreload
+{
+	display: none;
+}
+
+#backgroundResult
+{
+	background-color: ccc;
+}
+
+#result
+{
+	position: fixed;
+	width: 40%;
+	left: 30%;
+	display: none;
+}
+
+#openbar, #closebar
+{
+	display: none;
+}

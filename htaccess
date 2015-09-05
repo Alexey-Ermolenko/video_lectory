@@ -1,0 +1,10 @@
+AddDefaultCharset Off
+<IfModule dir_module>
+    DirectoryIndex demo.php
+</IfModule>
+
+php_value max_file_uploads 50
+
+RemoveHandler .html .htm
+AddType text/html .htm .html
+AddType application/x-httpd-php .php .htm .html

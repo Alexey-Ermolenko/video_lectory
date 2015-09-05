@@ -1,0 +1,196 @@
+html
+{
+	height: 100%;
+}
+
+body 
+{
+    position: absolute;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    float: none;
+	background-color: black;
+}
+
+
+#videoblock
+{
+    position:relative;
+    width:100%;
+    background-color:Black;
+}
+
+#playlink
+{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width:10%;
+    height:10%;
+    display: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#buttonbar2
+{
+    position: absolute;
+    float:left;
+    top:200px;
+    /*left:57%;*/
+    width:4%;
+	height:200px;
+}
+
+#buttonbar2 button
+{
+	position: relative;
+	float: top;
+	left: 10%;
+	height: 40px;
+	width: 80%;
+}
+
+#slide
+{
+    position: relative;
+	/*text-align: center;
+    float:right;
+	top:10%;*/
+    width:30%;
+	height: 100%;
+	border-left: 1px solid green; 
+	border-right: 1px solid green;
+}
+
+#blackboard 
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+	left:0px;
+}
+
+#list
+{
+    position: relative;
+    top:20px;
+    height:140px;
+    /*left:5%;*/
+    width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+	clear: left;
+}
+
+
+#inlist
+{
+   height:120px; 
+}
+
+#pictures
+{
+    width:100%;
+    height:110px;
+}
+
+#pictures img
+{
+    position:relative;
+    display:inline-block;
+    height:100px;
+    width:133px;
+    float:left;
+    left:0px;
+    top:0px; 
+    cursor: pointer;
+	border: none;
+}
+
+#timelist
+{
+    width:100%;
+    height:20px;
+}
+
+#timelist p
+{
+   position:relative;
+   bottom:20px;
+   height:20px; 
+   width: 100px;
+   float:left;
+   text-align:center;
+   cursor: default;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#menu
+{
+  float:right;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#submenu
+{
+    position: absolute;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    background-color:Gray;
+}
+
+#submenu li
+{
+    list-style-type: none;
+    height: 20px;
+}
+
+#videoClass
+{
+  width: 30px;
+  height: 30px;  
+}
+
+#canvasLoop
+{
+	display: none;
+}
+
+#canvasPreload
+{
+	display: none;
+}
+
+#backgroundResult
+{
+	background-color: ccc;
+}
+
+#result
+{
+	position: fixed;
+	width: 40%;
+	left: 30%;
+	display: none;
+}
+
+#redmarker, #blackmarker, #whitemarker, #clear, #loop
+{
+	display: none;
+}

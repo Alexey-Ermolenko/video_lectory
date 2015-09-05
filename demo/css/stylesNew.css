@@ -1,0 +1,95 @@
+html
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	border:0px solid #000;
+	min-height: 100%;
+	background-color: #fafafa;
+}
+
+#logo
+{
+	max-height:100px;
+	margin-left: 100px;
+}
+
+nav
+{
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color:#1E71B8;
+}
+
+article
+{
+	position:absolute;
+	top:145px;
+	bottom:40px;
+	width:100%;
+	overflow-x: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-sizing: border-box;
+}
+
+ul
+{
+	list-style:none;
+	padding:0px;
+	margin: 0px;
+	height: 40px;
+}
+
+.menu
+{ 
+	float:left;
+	height: 40px;
+}
+
+.menu a
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+    text-align: center;
+	padding: 10px;
+	height: 20px;
+}
+
+.menu a:hover
+{
+	cursor: pointer;
+	color: gold;	
+}
+
+.links
+{
+	text-decoration: none; /* Убираем подчёркивание */
+	color: #3F48CC; /* Цвет текста */
+	display: inline-block;
+}
+
+footer
+{
+	position: fixed;
+	background-color:#1E71B8;
+	text-align:center;
+	color: white;
+	height: 40px;
+	width: 100%;
+	bottom: 0px;
+}
+
+article h2
+{
+	text-indent: 1em;
+}
+
+article p
+{
+	text-indent: 1.4em;
+}

@@ -1,0 +1,113 @@
+<?php
+session_start();
+$numberLection=$_GET['id'];
+$_SESSION['$numberLection']=$numberLection;
+include "createJSON.php";
+include "about_script.php";
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<title>ML Studio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="" />
+	
+	<link rel="shortcut icon" href="../lib/kickstart/css/img/favicon.ico">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="../lib/kickstart/css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="../lib/kickstart/css/style.css" media="all" /> 
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" /> 
+	
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../lib/kickstart/js/kickstart.js"></script>
+
+	
+
+	<script type="text/javascript" src="js/three.js"></script>
+	<script type="text/javascript" src="js/obj2web.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/blackborder.js"></script>
+	<script type="text/javascript" src="js/createActions.js"></script>
+
+</head>
+<body>
+	<nav class="navbar">
+		<ul>
+			<li><a href="../"><span>ML</span>Studio</a></li>
+		</ul>
+	</nav>
+	<div class="grid" style="padding-top: 50px;">
+		<h2><?php include "createName.php"; ?></h2>
+
+		<div class="lecture clearfix">
+
+		<div class="col_6 column">
+			<div id="videoblock">
+				<video id="video" poster="<?php echo $poster; ?>">
+					<source id="mp4" src="">
+					<source id="webm" src="">
+				</video>
+				<div id="loadblock">
+					<img id="load" src="../files/load.gif">
+				</div>
+				<img id="playlink" src="../files/play.png" alt="" />
+			</div>
+			<div id="buttonbar">
+			<button class="small" id="play"></button>
+			<output id="time"></output>
+			<input type="range" id='videoRange'/>
+			<output id="fullTime"></output>
+
+			<ul id="menu">
+				<li>
+					<button class="small" id="videoClass"><i class="fa fa-cog"></i></button>
+					<ul id="submenu">
+					</ul>
+				</li>
+			</ul>
+			<input type="range" id='audioRange'/>
+			<button class="small" id="audioFull"></button>
+		</div>
+		</div>
+		<div class="col_6 column">
+			<div id="slide">		
+			</div>
+		</div>
+
+		</div>
+
+	<div id="list">
+		<div id="inlist">
+			<div id="pictures"></div> 
+			<div id="timelist"></div>
+		</div>
+	</div>
+
+	</div>
+
+
+
+	<div id="site">
+
+    
+	</div>
+
+
+	<canvas id='canvasLoop'></canvas>
+	<script type="text/javascript">
+		var jsonString = <?php echo json_encode($JSON); ?>;
+		var paintString = <?php echo json_encode($JSON2); ?>;
+		var info1 = '<?php echo $info1; ?>';
+		var info2 = '<?php echo $info2; ?>';
+		var info3 = '<?php echo $info3; ?>';
+		var info4 = '<?php echo $info4; ?>';
+		var info5 = '<?php echo $info5; ?>';
+		var info6 = '<?php echo $info6; ?>';
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

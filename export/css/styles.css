@@ -1,0 +1,316 @@
+.firstNavLink
+{
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px;
+	background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+	text-decoration: none;
+	color: #a00;
+}
+
+.secondNavLink
+{
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px;
+	background: linear-gradient(to top, #fff, #eee);
+	text-decoration: none;
+	color: #ff8000;
+}
+
+#thisLink
+{
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px;
+	text-decoration: none;
+	background: linear-gradient(to bottom, #fff, #ddd);
+	color: #008040;
+	
+}
+
+#thisLink2
+{
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 10px -2px;
+	padding: 10px 15px;
+	text-decoration: none;
+	background: linear-gradient(to top, #f1f1f1, #e5e5df);
+	color: #d9be00;
+}
+
+.firstNavLink:hover 
+{
+	background: linear-gradient(to bottom, #fcfff4, #e9e9ce);
+	color: #a00;
+}
+   
+.secondNavLink:hover 
+{
+	background: linear-gradient(to top, #f1f1f1, #e5e5df);
+	color: #d9be00;
+}
+.links
+{
+	text-decoration: none;
+	color: #1E71B8;
+	display: inline-block;
+}
+
+#result
+{
+	position: fixed;
+	width: 40%;
+	left: 30%;
+	display: none;
+}
+
+#backgroundResult
+{
+	background-color: ccc;
+}
+
+#site
+{
+    position: relative;
+	float: left;
+    width:52%;
+}
+
+#videoblock
+{
+    position:relative;
+    width:100%;
+}
+
+#playlink
+{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    width:10%;
+    height:10%;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#videoblock video
+{
+    position:relative;
+    width:100%;
+	cursor: pointer;
+}
+#loadblock
+{
+	background:#ccc;
+	display:none;
+	text-align: center;
+}
+#load
+{
+	position: relative;
+	height:100px;
+	width:100px;
+}
+
+#buttonbar
+{
+    position:relative;
+    bottom: 0px;
+    height: 30px;
+    width:100%;
+    border-color: rgb(0,0,0);
+    border-width: 10px;
+    background-color:rgb(255,255,255);
+}
+
+
+#play
+{
+    float: left;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+#videoRange
+{
+    float: left;
+    height:30px;
+    width:45%;
+    cursor: pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+#time
+{
+    float: left;
+    padding-top:5px;
+    padding-left: 5px;
+    height:40px;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#fullTime
+{
+    float: left;
+    padding-top:5px;
+    padding-left: 5px;
+    height:40px;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#audioFull
+{
+    float: right;
+    width:30px;
+    height:30px;
+    cursor: pointer;
+}
+
+#audioRange
+{
+    float: right;
+    height:30px;
+    width:10%;
+    cursor: pointer;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+#videoFull
+{
+    float: right;
+    width:30px;
+    height:30px;
+}
+
+#slide
+{
+    position: relative;
+    float:right;
+    width:43%;
+	overflow:auto;
+}
+
+#blackboard 
+{
+	position: absolute;
+	width: 99%;
+	height: 99%;
+	margin-top: 0px;
+	margin-left: 0px;
+	border: 1px solid black;
+}
+
+#list
+{
+    position: relative;
+    top:10%;
+    height:140px;
+	width:100%;
+    overflow-y:hidden;
+    overflow-x:auto;
+}
+
+
+#inlist
+{
+   height:120px; 
+}
+
+#pictures
+{
+    width:100%;
+    height:110px;
+}
+
+#pictures img
+{
+    position:relative;
+    display:inline-block;
+    height:100px;
+    width:133px;
+    float:left;
+    left:0px;
+    top:0px; 
+    cursor: pointer;
+	border: none;
+}
+
+#timelist
+{
+    width:100%;
+    height:20px;
+}
+
+#timelist p
+{
+   position:relative;
+   bottom:20px;
+   height:20px; 
+   width: 133px;
+   float:left;
+   text-align:center;
+   cursor: default;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+#menu
+{
+  float:right;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#submenu
+{
+    position: absolute;
+    width: 80px;
+    margin: 0;
+    padding: 0;
+    right: 0px;
+    background-color:Gray;
+}
+
+#submenu li
+{
+    list-style-type: none;
+    height: 20px;
+}
+
+#videoClass
+{
+  width: 30px;
+  height: 30px;  
+}
+
+#canvasLoop
+{
+	display: none;
+}

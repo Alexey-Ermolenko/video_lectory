@@ -1,0 +1,50 @@
+<?php
+session_start();
+$numberLection=$_GET['idLection'];
+$numberScenario=$_GET['idScenario'];
+$_SESSION['$numberLection']=$numberLection;
+$_SESSION['$numberScenario']=$numberScenario;
+include "homepage.php"; 
+?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/styles2.css" type="text/css">
+<script type="text/javascript" src="js/three.js"></script>
+<script type="text/javascript" src="js/obj2web.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<title>Webinar W: Запись лекции</title>
+</head>
+
+<body>
+	<article>
+		<div id="slide">
+		</div>
+		<div id='buttonbar2'>
+			<button id="redmarker">r</button>
+			<button id="blackmarker">b</button>
+			<button id="whitemarker">w</button>
+			<button id="clear">&#10007</button>
+			<button id="loop">L</button>
+		</div>
+		<canvas id='canvasLoop'></canvas>
+		<canvas id='canvasPreload'></canvas>
+	</article>
+	<script type="text/javascript">
+		var countSlide=<?php echo $countSlide; ?>;
+		var jsonID = '<?php echo json_encode($masID);?>';
+		var jsonType = '<?php echo json_encode($masType);?>';
+		var jsonSlide2D = '<?php echo json_encode($masSlide2D);?>';
+		var jsonTexture3D = '<?php echo json_encode($masTexture3D);?>';
+		var jsonObject3D = '<?php echo json_encode($masObject3D);?>';
+		var jsonComment = '<?php echo json_encode($masComment);?>';
+		var url = '<?php echo $home."repository/" ?>';
+		var url2 = '<?php echo $home."files/" ?>';
+		var sitepath ='<?php echo $home?>';
+	</script>
+	<script type="text/javascript" src="js/blackborder.js"></script>
+	<script type="text/javascript" src="js/loop.js"></script>
+	<script type="text/javascript" src="js/script2.js"></script>
+</body>
+</html>
